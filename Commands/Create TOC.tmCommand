@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+i = 0
+j = 0
+$stdin.each_line do |line|
+	if line.include?("/* =|")
+		j += 1
+		puts "\t#{i}.#{j}.#{line.delete("/* =|")}"
+	elsif line.include?("/* =")
+		i += 1
+		j = 0
+		puts "#{i}.#{line.delete("/* =")}"
+	end
+end</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>^~@t</string>
+	<key>name</key>
+	<string>Create TOC</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source</string>
+	<key>uuid</key>
+	<string>6DD1DF46-0631-4792-BCC4-E2BE3B6CE055</string>
+</dict>
+</plist>

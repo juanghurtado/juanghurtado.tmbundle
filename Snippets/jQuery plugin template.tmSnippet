@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>(function(\$) {
+  \$.${1:yourPluginName} = function(element, options) {
+      // To avoid scope issues, use 'plugin' instead of 'this'
+      // to reference this class from internal events and functions.
+      var plugin = this;
+
+      // Access to jQuery and DOM versions of element
+      plugin.\$element = $(element);
+      plugin.element = element;
+
+      // Add a reverse reference to the DOM object
+      plugin.\$element.data("$1", plugin);
+
+      plugin.init = function() {
+          plugin.options = \$.extend(\$.$1.defaultOptions, options);
+          
+          // Put your initialization code here
+      };
+
+      // Public Function
+      plugin.publicFunction = function(paramaters){
+        console.log('Sample public function');
+      };
+      
+      // Private Function
+      privateFunction = function(paramaters){
+        console.log('Sample private function');
+      };
+      
+      // Run initializer
+      plugin.init();
+  };
+
+  \$.$1.defaultOptions = {
+      sample1: "lorem ipsum dolor",
+      sample2: "lorem ipsum dolor"
+  };
+
+  \$.fn.$1 = function(options) {
+      return this.each(function() {
+          (new \$.$1(this, options));
+
+          // Plugin stuff
+      });
+  };
+})(jQuery);</string>
+	<key>name</key>
+	<string>jQuery plugin template</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>jqplugin</string>
+	<key>uuid</key>
+	<string>2E650CB0-1829-47A8-9871-91F264A86749</string>
+</dict>
+</plist>

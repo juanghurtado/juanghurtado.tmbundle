@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$TM_SELECTED_TEXT:focus, $TM_SELECTED_TEXT:hover {$1}$0</string>
+	<key>keyEquivalent</key>
+	<string>@H</string>
+	<key>name</key>
+	<string>:focus :hover</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>uuid</key>
+	<string>F8DFE69F-B077-4A0C-8AEF-B7AE1881CF4F</string>
+</dict>
+</plist>
