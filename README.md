@@ -126,6 +126,10 @@ Transforms selected CSS selector into a :focus :hover selector: `#content .sampl
 
 Into this: `#content .sample a:focus, #content .sample a:hover`
 
+### background: none; : `bgn`
+
+Creates a `background: none;` CSS rule.
+
 ## HTML
 
 ### ul > li * 5 > a: `ula`
