@@ -106,6 +106,16 @@ Creates a secondary comment banner:
 ----------------------------------------- */
 ```
 
+### Snippet: Comment banner: Method: `banm`
+
+Creates a comment banner used for methods:
+
+```js
+/* =|foo_public_method(param)
+ *  - param (type): Lorem ipsum dolor
+------------------------------------------------------------------------------ */
+```
+
 ## CSS
 
 ### content image: `content`
