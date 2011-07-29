@@ -3,36 +3,76 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>(function(\$) {
+	<string>/* ----------------------------------------------------------------------------------
+  jquery.$1 plugin
+
+  Encoding: UTF-8
+  Authors:  
+    Juan G. Hurtado   [hello@juanghurtado.com]
+----------------------------------------------------------------------------------
+  Table of contents
+----------------------------------------------------------------------------------
+  1.DEFAULT CONFIG
+  2.LOCAL VARS
+  3.INIT METHOD
+  4.PUBLIC METHODS
+    4.1.foo_public_method(param)
+  5.PRIVATE METHODS
+    5.1.foo_private_method(param)
+  6.INITIALIZATION
+  7.PLUGIN BINDING
+---------------------------------------------------------------------------------- */
+(function(\$) {
   \$.${1:pluginName} = function(element, options) {
+    
+    /* =DEFAULT CONFIG
+    ------------------------------------------------------------------------------ */
     var defaults = {
-      foo: 'bar',
-      onFoo: function() {}
+      lorem : "ipsum"
     }
     
-    var plugin = this;
+    /* =LOCAL VARS
+    ------------------------------------------------------------------------------ */
+    var plugin   = this,
+        plugin.settings = {},
+        element  = element,
+        \$element = \$(element);
     
-    var \$element = \$(element),
-        element = element;
-    
-    plugin.settings = {};
-    
+    /* =INIT METHOD
+    ------------------------------------------------------------------------------ */
     plugin.init = function() {
       plugin.settings = \$.extend({}, defaults, options);
       
+      
     }
-
-    plugin.foo_public_method = function() {
+    
+    /* =PUBLIC METHODS
+    ------------------------------------------------------------------------------ */
+    
+    /* =|foo_public_method(param)
+     *  - param (type): Lorem ipsum dolor
+    ------------------------------------------------------------------------------ */
+    plugin.foo_public_method = function(param) {
     
     }
-
-    var foo_private_method = function() {
+    
+    /* =PRIVATE METHODS
+    ------------------------------------------------------------------------------ */
+    
+    /* =|foo_private_method(param)
+     *  - param (type): Lorem ipsum dolor
+    ------------------------------------------------------------------------------ */
+    var foo_private_method = function(param) {
     
     }
-
+    
+    /* =INITIALIZATION
+    ------------------------------------------------------------------------------ */
     plugin.init();
   }
-
+  
+  /* =PLUGIN BINDING
+    ------------------------------------------------------------------------------ */
   \$.fn.$1 = function(options) {
     return this.each(function() {
       if (undefined == \$(this).data('$1')) {

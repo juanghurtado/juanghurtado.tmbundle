@@ -12,11 +12,11 @@ j = 0
 $stdin.each_line do |line|
 	if line.include?("/* =|")
 		j += 1
-		puts "\t#{i}.#{j}.#{line.delete("/* =|")}"
+		puts "  #{i}.#{j}.#{line.strip.gsub("/* =|", "")}"
 	elsif line.include?("/* =")
 		i += 1
 		j = 0
-		puts "#{i}.#{line.delete("/* =")}"
+		puts "#{i}.#{line.strip.gsub("/* =", "")}"
 	end
 end</string>
 	<key>input</key>
@@ -26,7 +26,7 @@ end</string>
 	<key>name</key>
 	<string>Create TOC</string>
 	<key>output</key>
-	<string>insertAsSnippet</string>
+	<string>afterSelectedText</string>
 	<key>scope</key>
 	<string>source</string>
 	<key>uuid</key>

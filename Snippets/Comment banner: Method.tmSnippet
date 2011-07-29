@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* =|${1:foo_private_method}(${2:param})
+ *  - $2 (${3:type}): ${4:Description}$5
+---------------------------------------------------------------------------------- */$0</string>
+	<key>name</key>
+	<string>Comment banner: Method</string>
+	<key>scope</key>
+	<string>source</string>
+	<key>tabTrigger</key>
+	<string>banm</string>
+	<key>uuid</key>
+	<string>6916EDCA-2C04-4D24-B55E-5231653977FB</string>
+</dict>
+</plist>
