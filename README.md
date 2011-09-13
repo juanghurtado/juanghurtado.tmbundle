@@ -58,7 +58,7 @@ Command that generates a Table of Content (TOC) by parsing the document for comm
 
 Resulting in a TOC like this:
 
-```css
+```
 1.PARENT
   1.1.Child
   1.2.Child
@@ -167,3 +167,7 @@ Writes a console.log statement:
 ### jQuery plugin template: `jqplugin`
 
 Generates a sample jQuery plugin template.
+
+### jQuery: `j`
+
+Alias for jQuery method. Write `j`, press `Tab` and you get `jQuery`.
