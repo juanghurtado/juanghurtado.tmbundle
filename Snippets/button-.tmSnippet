@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>a.button${1:-}, input.button${1:-}, button.button${1:-} {$0}
+
+a.button${1:-}:focus, input.button${1:-}:focus, button.button${1:-}:focus,
+a.button${1:-}:hover, input.button${1:-}:hover, button.button${1:-}:hover {}
+
+a.button${1:-}:active, input.button${1:-}:active, button.button${1:-}:active {}</string>
+	<key>name</key>
+	<string>button-</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>button-</string>
+	<key>uuid</key>
+	<string>39DFFBD8-5C89-4DBC-9AE3-816ECF7515BE</string>
+</dict>
+</plist>

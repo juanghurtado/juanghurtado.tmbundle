@@ -15,6 +15,9 @@
 			<string>EBF64E3D-58B3-474E-B3AE-2321F672E047</string>
 			<string>7711DF43-1B0E-4BCC-832C-27AF453D8952</string>
 			<string>DE389D5D-8774-4710-89B0-8639D7F6DE46</string>
+			<string>707C1554-E7C3-4668-9839-7D843FD465A9</string>
+			<string>C7CB44C7-ECED-4F9B-8F7A-2EEECA5DFD27</string>
+			<string>C970D4A1-ECFC-49CB-BE6E-85E2CA880798</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -42,6 +45,10 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>DA3162FE-6C57-43BB-9930-E097FB355814</string>
+					<string>EF4ACE92-B604-4A30-BCE5-5B09C4DEA596</string>
+					<string>6BF8FAE9-47C4-4750-B1A4-C41B2F7FE3B2</string>
+					<string>39DFFBD8-5C89-4DBC-9AE3-816ECF7515BE</string>
 					<string>92979FF9-DC42-453D-89B0-5F3D4239DCCF</string>
 					<string>BBB8B71C-74B3-426E-A862-3D453A4F3421</string>
 					<string>748CF26C-C88A-4B82-90E0-FC50B74A4254</string>
@@ -57,6 +64,7 @@
 	<string>juanghurtado</string>
 	<key>ordering</key>
 	<array>
+		<string>C970D4A1-ECFC-49CB-BE6E-85E2CA880798</string>
 		<string>707C1554-E7C3-4668-9839-7D843FD465A9</string>
 		<string>797A1CC1-DD13-4B48-B07A-A0F7A6E97BAA</string>
 		<string>052B9F24-0489-4ED5-8CCC-EB3A3FC7C4F5</string>
@@ -74,6 +82,7 @@
 		<string>DDADCDCD-A6DE-4B93-BAA7-76B1AB8CDF68</string>
 		<string>0B37D1AB-7E47-4987-B465-A5287ADD5DFB</string>
 		<string>C7CB44C7-ECED-4F9B-8F7A-2EEECA5DFD27</string>
+		<string>39DFFBD8-5C89-4DBC-9AE3-816ECF7515BE</string>
 	</array>
 	<key>uuid</key>
 	<string>8AFAF7D0-D258-406F-AB4D-C7E01D4D78EF</string>

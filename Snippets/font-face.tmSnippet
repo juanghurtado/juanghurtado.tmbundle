@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@font-face {
+  font-family: '$2';
+  src: url('../fonts/$1.eot');
+  src: local('☺'), url('../fonts/$1.woff') format('woff'), url('../fonts/$1.ttf') format('truetype'), url('../fonts/$1.svg#webfontWTt21cKD') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}$0</string>
+	<key>name</key>
+	<string>font-face</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>font-face</string>
+	<key>uuid</key>
+	<string>EF4ACE92-B604-4A30-BCE5-5B09C4DEA596</string>
+</dict>
+</plist>

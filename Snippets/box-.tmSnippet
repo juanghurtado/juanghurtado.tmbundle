@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$TM_SELECTED_TEXT:focus, $TM_SELECTED_TEXT:hover {$0}</string>
-	<key>keyEquivalent</key>
-	<string>@H</string>
+	<string>.box${1:-} {$0}
+  
+  .box${1:-} .box-title {}
+    
+  .box${1:-} .box-content {}</string>
 	<key>name</key>
-	<string>:focus :hover</string>
+	<string>box-</string>
 	<key>scope</key>
 	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>box-</string>
 	<key>uuid</key>
-	<string>F8DFE69F-B077-4A0C-8AEF-B7AE1881CF4F</string>
+	<string>6BF8FAE9-47C4-4750-B1A4-C41B2F7FE3B2</string>
 </dict>
 </plist>
