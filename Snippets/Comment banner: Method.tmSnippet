@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>/* =|${1:foo_private_method}(${2:param})
  *  - $2 (${3:type}): ${4:Description}$5
----------------------------------------------------------------------------------- */$0</string>
+--------------------------------------------------------------------------- */$0</string>
 	<key>name</key>
 	<string>Comment banner: Method</string>
 	<key>scope</key>
