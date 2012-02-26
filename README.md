@@ -22,7 +22,7 @@ Command that generates a Table of Content (TOC) by parsing the document for comm
 
 /* =PARENT
 ---------------------------------------------------------------------------------- */
- 
+
 ... Code ...
 
 /* =|Child
@@ -80,7 +80,7 @@ Creates a header comment banner:
   Global stylesheet
 
   Encoding: UTF-8
-  Authors:  
+  Authors:
     Juan G. Hurtado   [hello@juanghurtado.com]
 ----------------------------------------------------------------------------------
   Table of contents
@@ -116,6 +116,24 @@ Creates a comment banner used for methods:
 ------------------------------------------------------------------------------ */
 ```
 
+### Snippet: Comment banner: End tag: `endt`
+
+Creates a comment banner I use at ending tags:
+
+```html
+<div id="sample">
+  ...
+</div><!-- #sample -->
+```
+
+### Command: Save Stripping: `⌘ + S`
+
+Overwrites default save action with a saving command that stripes all unneccesary whitespace (end of lines, between lines…).
+
+### Command: Delete line: `⌘ + D`
+
+Command to remove current line.
+
 ## CSS
 
 ### content image: `content`
@@ -139,6 +157,45 @@ Into this: `#content .sample a:focus, #content .sample a:hover`
 ### background: none; : `bgn`
 
 Creates a `background: none;` CSS rule.
+
+### Box: `box-`
+
+Writes down a set of CSS rules for a common HTML pattern that I use for boxes:
+
+```css
+.box- {}
+
+  .box- .box-title {}
+
+  .box- .box-content {}
+```
+
+### Button: `button-`
+
+Writes down a set of CSS rules for a common HTML pattern that I use for buttons:
+
+```css
+a.button-, input.button-, button.button- {}
+
+a.button-:focus, input.button-:focus, button.button-:focus,
+a.button-:hover, input.button-:hover, button.button-:hover {}
+
+a.button-:active, input.button-:active, button.button-:active {}
+```
+
+### font-face : `font-face`
+
+Writes down a common custom font-face CSS declaration, ready to put custom font name, like this:
+
+```css
+@font-face {
+  font-family: 'Custom-Font';
+  src: url('../fonts/custom-font.eot');
+  src: local('☺'), url('../fonts/custom-font.woff') format('woff'), url('../fonts/custom-font.ttf') format('truetype'), url('../fonts/custom-font.svg#webfontWTt21cKD') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+```
 
 ## HTML
 
@@ -171,3 +228,7 @@ Generates a sample jQuery plugin template.
 ### jQuery: `j`
 
 Alias for jQuery method. Write `j`, press `Tab` and you get `jQuery`.
+
+### JSON.stringify: `jstr`
+
+Writes a `JSON.stringify()` statement.
